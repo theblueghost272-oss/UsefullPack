@@ -1,0 +1,8 @@
+{
+"format_version" : "1.8.0",
+"animations" : {
+"animation.turtle.general" : {},
+"animation.turtle.ground_move" : {},
+"animation.turtle.move" : {}
+	}
+}

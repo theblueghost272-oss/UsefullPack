@@ -1,0 +1,11 @@
+{
+"format_version" : "1.8.0",
+"animations" : {
+"animation.parrot.base" : {},
+"animation.parrot.dance" : {},
+"animation.parrot.flying" : {},
+"animation.parrot.moving" : {},
+"animation.parrot.sitting" : {},
+"animation.parrot.standing" : {}
+}
+}

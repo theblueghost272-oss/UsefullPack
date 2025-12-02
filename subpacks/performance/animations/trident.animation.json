@@ -1,0 +1,9 @@
+{
+"format_version": "1.10.0",
+"animations": {
+"animation.trident.wield_first_person": {},
+"animation.trident.wield_first_person_raise": {},
+"animation.trident.wield_first_person_riptide": {},
+"animation.trident.wield_third_person": {},
+"animation.trident.wield_third_person_raise": {}
+}}

@@ -1,0 +1,9 @@
+{
+"format_version" : "1.8.0",
+"animations" : {
+"animation.ravager.biting" : {},
+"animation.ravager.idle_mouth" : {},
+"animation.ravager.roaring" : {},
+"animation.ravager.stunned" : {},
+"animation.ravager.walk" : {}
+	}}

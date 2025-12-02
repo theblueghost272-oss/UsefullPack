@@ -1,0 +1,11 @@
+{
+"format_version" : "1.8.0",
+"animations" : {
+"animation.ocelot_v1.0.baby_transform" : {},
+"animation.ocelot_v1.0.setup" : {},
+"animation.ocelot_v1.0.sit" : {},
+"animation.ocelot_v1.0.sneak" : {},
+"animation.ocelot_v1.0.sprint" : {},
+"animation.ocelot_v1.0.walk" : {}
+}
+}

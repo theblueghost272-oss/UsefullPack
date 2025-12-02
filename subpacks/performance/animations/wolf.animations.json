@@ -1,0 +1,11 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.wolf.angry" : {},
+		"animation.wolf.baby_scaling" : {},
+		"animation.wolf.head_rot_z" : {},
+		"animation.wolf.leg_default" : {},
+		"animation.wolf.setup" : {},
+		"animation.wolf.shaking" : {},
+		"animation.wolf.sitting" : {},
+		"animation.wolf.tail_default" : {}}}

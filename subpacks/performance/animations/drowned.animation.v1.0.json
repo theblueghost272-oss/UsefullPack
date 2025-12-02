@@ -1,0 +1,7 @@
+{
+	"format_version" : "1.8.0",
+"animations" : {
+"animation.drowned.attack.rotations.v1.0" : {},
+"animation.drowned.swimming.v1.0":{}
+	}
+}

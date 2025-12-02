@@ -1,0 +1,24 @@
+{
+"format_version" : "1.8.0",
+"animations" : {
+"animation.humanoid.attack.rotations.v1.0" : {},
+"animation.humanoid.base_pose.v1.0" : {},
+"animation.humanoid.big_head.v1.0" : {},
+"animation.humanoid.bob.v1.0" : {},
+"animation.humanoid.bow_and_arrow.v1.0" : {},
+"animation.humanoid.brandish_spear.v1.0" : {},
+"animation.humanoid.charging.v1.0" : {},
+"animation.humanoid.damage_nearby_mobs.v1.0" : {},
+"animation.humanoid.holding.v1.0" : {},
+"animation.humanoid.look_at_target.default.v1.0" : {},
+"animation.humanoid.look_at_target.gliding.v1.0" : {},
+"animation.humanoid.look_at_target.swimming.v1.0" : {},
+"animation.humanoid.move.v1.0" : {},
+"animation.humanoid.riding.arms.v1.0" : {},
+"animation.humanoid.riding.legs.v1.0" : {},
+"animation.humanoid.sneaking.v1.0" : {},
+"animation.humanoid.swimming.v1.0" : {},
+"animation.humanoid.use_item_progress.v1.0" : {},
+"animation.skeleton.attack.v1.0" : {}
+	}
+}
