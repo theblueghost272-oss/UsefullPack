@@ -1,0 +1,18 @@
+{
+"format_version" : "1.8.0",
+"animations" : {
+"animation.agent.move" : {
+"loop" : false,
+"bones" : {
+"body" : {"position" : [0.0,0.0,0.0]},
+"leftarm" : {"rotation" : [0.0,0.0,0.0]},
+"leftleg" : {"rotation" : [0.0,0.0,0.0]},
+"rightarm" : {"rotation" : [0.0,0.0,0.0]},
+"rightleg" : {"rotation" : [0.0,0.0,0.0]}}},
+"animation.agent.swing_arms" : {
+"loop" : false,
+"bones" : {
+"rightarm" : {"rotation" : [0.0,0.0,0.0]
+}}
+}}
+}

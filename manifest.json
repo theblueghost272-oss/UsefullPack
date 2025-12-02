@@ -1,0 +1,92 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "pack.description",
+		"name": "pack.name",
+		"uuid": "517f9c3f-40aa-4238-9093-288297bb3d1b",
+		"version": [
+			2,
+			5,
+			0
+		],
+		"min_engine_version": [
+			1,
+			21,
+			0
+		]
+	},
+	"modules": [
+		{
+			"description": "pack.description",
+			"type": "resources",
+			"uuid": "b629ada2-835b-4256-abb8-bea83fc4a3aa",
+			"version": [
+				2,
+				5,
+				0
+			]
+		},
+		{
+			"description": "pack.description",
+			"type": "script",
+			"language": "javascript",
+			"entry": "scripts/veinminer.js"
+			"uuid": "8b43ba5f-a844-4adb-af33-e18a82912687",
+			"version": [
+				2,
+				5,
+				0
+			]
+
+		}
+	],
+	"subpacks": [
+		{
+			"folder_name": "2",
+			"name": "§4 2Chunks (Best FPS)",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "3",
+			"name": "§4 3chunks (better fps)",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "4",
+			"name": "§4 4chunks (Good fps)",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "none",
+			"name": "None",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "performance",
+			"name": "§cPvP Mode-2chunks",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "midperformance",
+			"name": "§cPvP Mode",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "vanila_gamma",
+			"name": "For Normal Minecraft",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "patched",
+			"name": "For Patched Apk",
+			"memory_tier": 0
+		}
+	],
+	"dependencies": [
+    {
+        "module_name": "@minecraft/server",
+        "version": "1.9.0"
+    }
+]
+
+}

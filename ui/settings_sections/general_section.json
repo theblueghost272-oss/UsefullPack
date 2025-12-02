@@ -1,0 +1,131 @@
+{
+  "gamertag_controls/gamertag_label": {
+    "size": [ "100%", 34 ],
+    "controls": [
+      {
+        "panel": {
+          "type": "panel",
+          "size": [ "100%", "100%" ],
+          "controls": [
+            {
+              "gamerpic": {
+                "type": "image",
+                "size": [ 32, 32 ],
+                "layer": 1,
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle",
+                "offset": [ 1, 0 ],
+                "bindings": [
+                  {
+                    "binding_name": "#gamerpic_texture_path",
+                    "binding_name_override": "#texture"
+                  },
+                  {
+                    "binding_name": "#gamerpic_texture_location_type",
+                    "binding_name_override": "#texture_file_system"
+                  }
+                ],
+                "controls": [
+                  {
+                    "player_panel_black_border@common.square_image_border_white": {
+                      "size": [ "100% + 2px", "100% + 2px" ],
+                      "color": [ 0, 0, 0 ],
+                      "anchor_from": "center",
+                      "anchor_to": "center"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "panel_gamertag": {
+                "type": "label",
+                "color": "$main_header_text_color",
+                "layer": 1,
+                "text": "#gamertag_label",
+                "font_size": "large",
+                "locked_alpha": 0.5,
+                "anchor_from": "bottom_left",
+                "anchor_to": "bottom_left",
+                "offset": [ 37, 0 ],
+                "bindings": [
+                  {
+                    "binding_name": "#gamertag_label"
+                  }
+                ]
+              }
+            },
+            {
+              "label_descriptor": {
+                "type": "label",
+                "color": "$main_header_text_color",
+                "layer": 1,
+                "text": "options.gamertag",
+                "locked_alpha": 0.5,
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "offset": [ 37, 4 ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "video_section/max_framerate_slider": {
+    "ignored": false
+  },
+
+  "video_section": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "vsync_dropdown@settings_common.option_dropdown": {
+              "$use_button": true,
+              "$option_label": "options.vsync",
+              "$dropdown_content": "general_section.vysnc_dropdown_content",
+              "$dropdown_area": "content_area",
+              "$dropdown_name": "vsync_dropdown",
+              "$options_dropdown_toggle_label_binding": "#vsync_dropdown_toggle_label",
+              "$option_enabled_binding_name": "#vsync_dropdown_enabled",
+              "$dropdown_scroll_content_size": [ "100%", "200%" ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "sound_section": {
+    "$audioSlidersSize": [ "100% - 2px", 16 ]
+  },
+
+  "language_header": {
+    "type": "panel",
+    "size": [ "100%", "100%c" ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "language_button_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "header_label": {
+          "type": "label",
+          "color": "$main_header_text_color",
+          "size": [ "100%", "default" ],
+          "text_alignment": "left",
+          "text": "options.languageWarning",
+          "layer": 2
+        }
+      }
+    ]
+  }
+}

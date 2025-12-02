@@ -1,0 +1,40 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:fog_settings": {
+    "description": {
+      "identifier": "fog_fps:fog_default"
+    },
+    "distance": {
+      "air": {
+        "fog_start": 900000.0,
+        "fog_end": 900000.0,
+        "render_distance_type": "fixed"
+      },
+      "weather": {
+        "fog_start": 900000.0,
+        "fog_end": 900000.0,
+        "render_distance_type": "fixed"
+      },
+      "water": {
+        "fog_start": 900000.0,
+        "fog_end": 900000.0,
+        "render_distance_type": "fixed"
+      },
+      "powder_snow": {
+        "fog_start": 900000.0,
+        "fog_end": 900000.0,
+        "render_distance_type": "fixed"
+      },
+      "lava": {
+        "fog_start": 900000.0,
+        "fog_end": 900000.0,
+        "render_distance_type": "fixed"
+      },
+      "lava_resistance": {
+        "fog_start": 900000.0,
+        "fog_end": 900000.0,
+        "render_distance_type": "fixed"
+      }
+    }
+  }
+}

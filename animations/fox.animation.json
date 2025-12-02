@@ -1,0 +1,11 @@
+{
+"format_version" : "1.8.0",
+"animations" : {
+"animation.fox.baby_transform" : {},
+"animation.fox.crouch" : {},
+"animation.fox.pounce" : {},
+"animation.fox.setup" : {},
+"animation.fox.sit" : {},
+"animation.fox.sleep" : {},
+"animation.fox.stuck" : {},
+"animation.fox.wiggle" : {}}}

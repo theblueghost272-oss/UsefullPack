@@ -1,0 +1,13 @@
+{
+"format_version" : "1.8.0",
+"animations" : {
+"animation.axolotl.idle_underwater":{},
+"animation.axolotl.idle_floor": {},
+"animation.axolotl.idle_floor_underwater": {},
+"animation.axolotl.swim": {},
+"animation.axolotl.walk_floor": {},
+"animation.axolotl.walk_floor_underwater": {},
+"animation.axolotl.play_dead": {},
+"animation.axolotl.swim_angle": {}
+}
+}

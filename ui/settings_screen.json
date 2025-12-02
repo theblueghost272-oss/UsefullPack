@@ -1,0 +1,386 @@
+{
+  "namespace": "settings",
+
+  "selector_stack_panel/controls_and_settings_selector_pane/language_button": {
+    "ignored": false
+  },
+  "section_content_panels/general_and_controls_sections/language_section": {
+    "ignored": false
+  },
+  "section_header_panels/general_and_controls_sections": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_back",
+        "value": [
+          {
+            "language_header@general_section.language_header": {
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "selector_stack_panel": {
+    "modifications": [
+      {
+        "control_name": "spacer_0",
+        "operation": "insert_after",
+        "value": [
+          {
+            "quick_settings_panel": {
+             "ignored": "(not $include_controls_and_settings_sections)",
+              "type": "stack_panel",
+              "controls": [
+                {
+                  "quick_settings_header@how_to_play_common.header": {
+                    "$text": "Quick Settings"
+                  }
+                },
+                {
+                  "padding_01": {
+                    "type": "panel",
+                    "size": [ 0, 5 ]
+                  }
+                },
+                {
+                  "view_angle_settings": {
+                    "type": "stack_panel",
+                    "size": [
+                      "33.3333333%",
+                      30
+                    ],
+                    "orientation": "horizontal",
+                    "controls": [
+                      {
+                        "first@settings_common.section_toggle_base": {
+                          "$toggle_name": "#thirdperson_radio_first",
+                          "ignored": "(not $include_controls_and_settings_sections)",
+                          "$unchecked_control": "common_toggles.toggle_unchecked",
+                          "$checked_control": "common_toggles.toggle_unchecked",
+                          "$glyph_texture": "textures/ui/firstperson_glyph",
+                          "$glyph_color_texture": "textures/ui/firstperson_glyph_color",
+                          "$glyph_anchor_from": "center",
+                          "$glyph_anchor_to": "center",
+                          "$button_text": " ",
+                          "$glyph_offset": [
+                            "0%",
+                            0
+                          ],
+                          "$glyph_size": [
+                            32,
+                            32
+                          ],
+                          "bindings": [
+                            {
+                              "binding_name": "#thirdperson_radio_first"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "third_back@settings_common.section_toggle_base": {
+                          "$toggle_name": "#thirdperson_radio_third_back",
+                          "ignored": "(not $include_controls_and_settings_sections)",
+                          "$unchecked_control": "common_toggles.toggle_unchecked",
+                          "$checked_control": "common_toggles.toggle_unchecked",
+                          "$glyph_texture": "textures/ui/thirdperson_glyph",
+                          "$glyph_color_texture": "textures/ui/thirdperson_back_glyph_color",
+                          "$glyph_anchor_from": "center",
+                          "$glyph_anchor_to": "center",
+                          "$button_text": " ",
+                          "$glyph_offset": [
+                            "0%",
+                            0
+                          ],
+                          "$glyph_size": [
+                            32,
+                            32
+                          ],
+                          "bindings": [
+                            {
+                              "binding_name": "#thirdperson_radio_third_back"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "third_front@settings_common.section_toggle_base": {
+                          "$toggle_name": "#thirdperson_radio_third_front",
+                          "$unchecked_control": "common_toggles.toggle_unchecked",
+                          "ignored": "(not $include_controls_and_settings_sections)",
+                          "$checked_control": "common_toggles.toggle_unchecked",
+                          "$glyph_texture": "textures/ui/thirdperson_glyph",
+                          "$glyph_color_texture": "textures/ui/thirdperson_glyph_color",
+                          "$glyph_anchor_from": "center",
+                          "$glyph_anchor_to": "center",
+                          "$button_text": " ",
+                          "$glyph_offset": [
+                            "0%",
+                            0
+                          ],
+                          "$glyph_size": [
+                            32,
+                            32
+                          ],
+                          "bindings": [
+                            {
+                              "binding_name": "#thirdperson_radio_third_front"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "fov_slider@settings_common.option_slider": {
+                    "$ignored": "($is_holographic and $is_reality_mode and not $is_pregame)",
+                    "$option_label": "#field_of_view_slider_label",
+                    "$slider_tts_text_value": "#field_of_view_text_value",
+                    "$slider_name": "field_of_view",
+                    "$slider_value_binding_name": "#field_of_view",
+                    "$option_enabled_binding_name": "#field_of_view_enabled",
+                    "$label_bindings": [
+                      {
+                        "binding_name": "$option_label"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "option_toggle_split_controls@settings_common.option_toggle": {
+                    "$option_binding_name":"#split_controls",
+                    "$option_enabled_binding_name":"#split_controls_enabled",
+                    "$option_label":"options.usetouchpad",
+                    "$toggle_name":"split_controls"
+                  }
+                },
+                {
+                  "toggle_settings": {
+                    "type": "stack_panel",
+                    "size": [ "50%",20 ],
+                    "orientation": "horizontal",
+                    "controls": [
+                    {
+                      "option_toggle_hidehand@settings_common.option_toggle": {
+                      "ignored": "($is_holographic)",
+                      "$option_label": "options.hidehand",
+                      "$option_binding_name": "#hide_hand",
+                      "$option_enabled_binding_name": "#hide_hand_enabled",
+                      "$toggle_name": "hide_hand"
+                      }
+                    },
+                    {
+                      "option_toggle_hidehud@settings_common.option_toggle": {
+                        "ignored": "($is_holographic)",
+                        "$option_label": "options.hidehud",
+                        "$option_binding_name": "#hide_hud",
+                        "$option_enabled_binding_name": "#hide_hud_enabled",
+                        "$toggle_name": "hide_hud"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+            }
+          },
+          {
+            "option_toggle_0@settings_common.option_toggle": {
+              "ignored": "(not $include_controls_and_settings_sections)",
+              "$toggle_name": "#see_more_toggle",
+              "$option_binding_name": "#see_more_toggle",
+              "$option_label": "selectTemplate.seeMore",
+              "$control_name": "general_section.advanced_video_options_toggle"
+            }
+          },
+          {
+            "advanced_settings": {
+              "type": "stack_panel",
+              "size": [
+                "100%",
+                "100%c"
+              ],
+              "bindings": [
+                {
+                  "binding_type": "view",
+                  "source_control_name": "general_section.advanced_video_options_toggle",
+                  "source_property_name": "#toggle_state",
+                  "target_property_name": "#visible"
+                }
+              ],
+              "controls": [
+                {
+                  "more_settings_panel": {
+                    "ignored": "(not $include_controls_and_settings_sections)",
+                    "type": "stack_panel",
+                    "controls": [
+                      {
+                        "max_framerate_slider@settings_common.option_slider": {
+                          "ignored": "($is_holographic)",
+                          "$option_label": "#max_framerate_slider_label",
+                          "$slider_name": "max_framerate",
+                          "$slider_value_binding_name": "#max_framerate",
+                          "$slider_tts_text_value": "#max_framerate_text_value",
+                          "$option_enabled_binding_name": "#max_framerate_enabled",
+                          "$slider_steps_binding_name": "#max_framerate_steps",
+                          "$label_bindings": [
+                            {
+                              "binding_name": "$option_label"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "render_distance_slider@settings_common.option_slider": {
+                          "ignored": "($is_holographic)",
+                          "$option_label": "#render_distance_slider_label",
+                          "$slider_name": "render_distance",
+                          "$slider_value_binding_name": "#render_distance",
+                          "$slider_tts_text_value": "#render_distance_text_value",
+                          "$option_enabled_binding_name": "#render_distance_enabled",
+                          "$slider_steps_binding_name": "#render_distance_steps",
+                          "$label_bindings": [
+                            {
+                              "binding_name": "$option_label"
+                            }
+                          ],
+                          "controls": [
+                            { "render_distance_warning@general_section.render_distance_warning": {} },
+                            { "option_generic_core@settings_common.option_generic_core": {} }
+                          ],
+                          "bindings": [
+                            {
+                              "binding_name": "#show_render_distance",
+                              "binding_name_override": "#visible"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "vr_render_distance_slider@settings_common.option_slider": {
+                          "ignored": "(not $is_holographic)",
+                          "$option_label": "#vr_render_distance_slider_label",
+                          "$slider_name": "vr_render_distance",
+                          "$slider_value_binding_name": "#vr_render_distance",
+                          "$slider_tts_text_value": "#vr_render_distance_text_value",
+                          "$option_enabled_binding_name": "#vr_render_distance_enabled",
+                          "$slider_steps_binding_name": "#vr_render_distance_steps",
+                          "$label_bindings": [
+                            {
+                              "binding_name": "$option_label"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "brightness_slider@settings_common.option_slider": {
+                          "ignored": "($is_holographic)",
+                          "$option_label": "#gamma_slider_label",
+                          "$slider_name": "gamma",
+                          "$slider_value_binding_name": "#gamma",
+                          "$slider_tts_text_value": "#gamma_text_value",
+                          "$option_enabled_binding_name": "#gamma_enabled",
+                          "$focus_override_up": "FOCUS_OVERRIDE_STOP",
+                          "$label_bindings": [
+                            {
+                              "binding_name": "$option_label"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "vr_brightness_slider@settings_common.option_slider": {
+                          "ignored": "(not $is_holographic)",
+                          "$option_label": "#vr_gamma_slider_label",
+                          "$slider_name": "vr_gamma",
+                          "$slider_value_binding_name": "#vr_gamma",
+                          "$slider_tts_text_value": "#vr_gamma_text_value",
+                          "$option_enabled_binding_name": "#vr_gamma_enabled",
+                          "$label_bindings": [
+                            {
+                              "binding_name": "$option_label"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "view_bobbing_toggle@settings_common.option_toggle": {
+                          "ignored": "($is_holographic and $is_reality_mode and not $is_pregame)",
+                          "$option_label": "options.viewBobbing",
+                          "$option_binding_name": "#view_bobbing",
+                          "$option_enabled_binding_name": "#view_bobbing_enabled",
+                          "$toggle_name": "view_bobbing"
+                        }
+                      },
+                      {
+                        "field_of_view_toggle@settings_common.option_toggle": {
+                          "$option_label": "options.fov.toggle",
+                          "$option_binding_name": "#field_of_view_toggle",
+                          "$option_enabled_binding_name": "#field_of_view_toggle_enabled",
+                          "$toggle_name": "field_of_view_toggle"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+          },
+          {
+            "selector_group_label_1@how_to_play_common.header": {
+              "$text": "options.accessibility"
+            }
+          },
+          {
+            "padding_02": {
+              "type": "panel",
+              "size": [ 0, 5 ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+  "selector_stack_panel/controls_and_settings_selector_pane": {
+    "modifications": [
+      {
+        "control_name": "selector_group_label_1",
+        "operation": "replace",
+        "value": [
+          {
+            "selector_group_label_1@how_to_play_common.header": {
+              "$text": "$controls_section_header"
+            }
+          },
+          {
+            "padding_03": {
+              "type": "panel",
+              "size": [ 0, 5 ]
+            }
+          }
+        ]
+      },
+      {
+        "control_name": "selector_group_label_2",
+        "operation": "replace",
+        "value": [
+          {
+            "selector_group_label_2@how_to_play_common.header": {
+              "$text": "$general_section_header"
+            }
+          },
+          {
+            "padding_04": {
+              "type": "panel",
+              "size": [ 0, 5 ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
