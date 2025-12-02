@@ -1,0 +1,63 @@
+{
+  "format_version": "1.21.60",
+  "particle_effect": {
+    "components": {
+      "minecraft:emitter_lifetime_expression": {
+        "activation_expression": 1,
+        "expiration_expression": 0
+      },
+      "minecraft:emitter_rate_manual": {
+        "max_particles": 100
+      },
+      "minecraft:emitter_shape_point": {
+        "offset": [0.0, -0.3, 0.0]
+      },
+      "minecraft:particle_expire_if_in_blocks": [
+        "minecraft:cauldron",
+        "minecraft:water_cauldron",
+        "minecraft:lava_cauldron",
+        "minecraft:powder_snow_cauldron",
+        "minecraft:magma",
+        "minecraft:sponge",
+        "minecraft:lava",
+        "minecraft:oak_leaves",
+        "minecraft:spruce_leaves",
+        "minecraft:birch_leaves",
+        "minecraft:jungle_leaves",
+        "minecraft:acacia_leaves",
+        "minecraft:dark_oak_leaves",
+        "minecraft:mangrove_leaves",
+        "minecraft:cherry_leaves",
+        "minecraft:pale_oak_leaves",
+        "minecraft:azalea_leaves",
+        "minecraft:azalea_leaves_flowered",
+        "minecraft:water",
+        "minecraft:kelp",
+        "minecraft:seagrass"
+      ],
+      "minecraft:particle_lifetime_events": {
+        "timeline": {
+          "0.5": "pool"
+        }
+      },
+      "minecraft:particle_lifetime_expression": {
+        "max_lifetime": "1"
+      }
+    },
+    "description": {
+      "basic_render_parameters": {
+        "material": "particles_alpha",
+        "texture": "textures/ps/null"
+      },
+      "identifier": "rg:pool_spawner"
+    },
+    "events": {
+      "pool": {
+        "particle_effect": {
+          "effect": "rg:pool_particle",
+          "type": "particle"
+        }
+      }
+    }
+  }
+}
