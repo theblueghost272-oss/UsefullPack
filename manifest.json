@@ -1,8 +1,8 @@
 {
 	"format_version": 2,
 	"header": {
-		"description": "pack.description",
-		"name": "pack.name",
+		"description": "My custom resource + script pack",
+		"name": "UsefullPack",
 		"uuid": "517f9c3f-40aa-4238-9093-288297bb3d1b",
 		"version": [
 			2,
@@ -17,7 +17,7 @@
 	},
 	"modules": [
 		{
-			"description": "pack.description",
+			"description": "My custom resource + script pack",
 			"type": "resources",
 			"uuid": "b629ada2-835b-4256-abb8-bea83fc4a3aa",
 			"version": [
@@ -27,17 +27,16 @@
 			]
 		},
 		{
-			"description": "pack.description",
+			"description": "My custom resource + script pack",
 			"type": "script",
 			"language": "javascript",
-			"entry": "scripts/veinminer.js"
+			"entry": "scripts/veinminer.js",
 			"uuid": "8b43ba5f-a844-4adb-af33-e18a82912687",
 			"version": [
 				2,
 				5,
 				0
 			]
-
 		}
 	],
 	"subpacks": [
@@ -83,10 +82,9 @@
 		}
 	],
 	"dependencies": [
-    {
-        "module_name": "@minecraft/server",
-        "version": "1.9.0"
-    }
-]
-
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.9.0"
+		}
+	]
 }
