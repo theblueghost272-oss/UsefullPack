@@ -1,0 +1,19 @@
+{
+  "namespace": "Meow_meow",
+  "hud_content": {
+  "modifications": [
+      {
+       "operation": "insert_front",
+       "array_name": "controls",
+       "value": {
+         "g1": {
+            "type": "image",
+            "texture": "textures/g1",
+            "size": [ 1024, 2048 ],
+             "layer": 30
+               }
+               }
+       }
+    ]
+  }
+}
